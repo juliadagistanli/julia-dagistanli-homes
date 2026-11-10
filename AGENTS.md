@@ -28,3 +28,6 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+- Agent details, listings, sales and awards live in `src/lib/site.ts`; pages read from it so updates happen in one place.
