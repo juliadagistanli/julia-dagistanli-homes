@@ -16,6 +16,11 @@ export const agent = {
 
 export const socials = [
   { label: "Instagram", href: "https://www.instagram.com/juliadagistanli" },
+  {
+    label: "Google",
+    href: "https://www.google.com/maps/place/Julia+Gulden+Dagistanli+-+Realtor,+The+Agency+Rutherford/@40.8300533,-74.1039247,17z/data=!4m6!3m5!1s0x89c2f8c9476fc6bd:0x34bc8b1ede53b471!8m2!3d40.8300533!4d-74.1039247!16s%2Fg%2F1tf2yqyy",
+    icon: "google",
+  },
   { label: "Facebook", href: "https://www.facebook.com/juliadagistanli" },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/juliadagistanli/" },
   { label: "YouTube", href: "https://www.youtube.com/juliadagistanli" },
@@ -24,11 +29,6 @@ export const socials = [
   { label: "X", href: "https://www.twitter.com/juliadagistanli" },
   { label: "Blog", href: "https://juliadagistanli.wordpress.com/" },
   { label: "Zillow reviews", href: "https://www.zillow.com/profile/Julia%20Dagistanli#reviews" },
-  {
-    label: "Google",
-    href: "https://www.google.com/maps/place/Julia+Gulden+Dagistanli+-+Realtor,+The+Agency+Rutherford/@40.8300533,-74.1039247,17z/data=!4m6!3m5!1s0x89c2f8c9476fc6bd:0x34bc8b1ede53b471!8m2!3d40.8300533!4d-74.1039247!16s%2Fg%2F1tf2yqyy",
-    icon: "google",
-  },
 ];
 
 export const awards = [
