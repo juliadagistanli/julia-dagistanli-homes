@@ -23,6 +23,7 @@ export const socials = [
   { label: "Pinterest", href: "https://www.pinterest.com/juliadagistanli" },
   { label: "X", href: "https://www.twitter.com/juliadagistanli" },
   { label: "Blog", href: "https://juliadagistanli.wordpress.com/" },
+  { label: "Zillow reviews", href: "https://www.zillow.com/profile/Julia%20Dagistanli#reviews" },
 ];
 
 export const awards = [
