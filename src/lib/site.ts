@@ -24,11 +24,11 @@ export const socials = [
   { label: "Facebook", href: "https://www.facebook.com/juliadagistanli" },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/juliadagistanli/" },
   { label: "YouTube", href: "https://www.youtube.com/juliadagistanli" },
-  { label: "TikTok", href: "https://www.tiktok.com/@juliadagistanli" },
+  { label: "Zillow reviews", href: "https://www.zillow.com/profile/Julia%20Dagistanli#reviews" },
   { label: "Pinterest", href: "https://www.pinterest.com/juliadagistanli" },
   { label: "X", href: "https://www.twitter.com/juliadagistanli" },
   { label: "Blog", href: "https://juliadagistanli.wordpress.com/" },
-  { label: "Zillow reviews", href: "https://www.zillow.com/profile/Julia%20Dagistanli#reviews" },
+  { label: "TikTok", href: "https://www.tiktok.com/@juliadagistanli" },
 ];
 
 export const awards = [
