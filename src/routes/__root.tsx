@@ -14,6 +14,7 @@ import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import { agent, awards, socials } from "@/lib/site";
 
 function NotFoundComponent() {
   return (
@@ -91,7 +92,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "author", content: "Julia Gulden Dagistanli" },
       { property: "og:site_name", content: "Julia Dagistanli Real Estate" },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:card", content: "summary" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -130,8 +131,48 @@ function RootShell({ children }: { children: ReactNode }) {
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "@id": "https://juliadagistanli.com/#real-estate-agent",
+    name: agent.name,
+    url: "https://juliadagistanli.com/",
+    telephone: agent.phone,
+    description:
+      "Rutherford, New Jersey real estate agent and listing specialist serving homeowners, buyers, landlords and investors across Bergen, Essex, Hudson and Passaic Counties.",
+    knowsLanguage: agent.languages,
+    areaServed: [
+      "Rutherford, New Jersey",
+      "Lyndhurst, New Jersey",
+      "East Rutherford, New Jersey",
+      "Carlstadt, New Jersey",
+      "Wallington, New Jersey",
+      "Wood-Ridge, New Jersey",
+      "Hasbrouck Heights, New Jersey",
+      ...agent.counties.map((county) => `${county} County, New Jersey`),
+    ],
+    worksFor: {
+      "@type": "Organization",
+      name: agent.brokerage,
+      url: "https://www.theagencyre.com/agent/julia-gulden-dagistanli",
+    },
+    identifier: {
+      "@type": "PropertyValue",
+      name: "New Jersey Real Estate License",
+      value: agent.license,
+    },
+    award: awards.map((item) => `${item.name} (${item.years})`),
+    sameAs: socials.map((item) => item.href),
+  };
+
   return (
     <QueryClientProvider client={queryClient}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData).replace(/</g, "\\u003c"),
+        }}
+      />
       <div className="flex min-h-screen flex-col">
         <SiteHeader />
         <main className="flex-1">

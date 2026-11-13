@@ -5,13 +5,14 @@ import portrait from "@/assets/julia-portrait.jpg";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
+    links: [{ rel: "canonical", href: "https://juliadagistanli.com/about" }],
     meta: [
-      { title: "About Julia Gulden Dagistanli · Rutherford NJ Realtor" },
+      { title: "About Julia Gulden Dagistanli | Rutherford NJ Realtor" },
       {
         name: "description",
-        content:
-          "Rutherford resident and real estate professional since 2002, with a background in interior design and a long record of NJAR Circle of Excellence awards.",
+        content: "Meet Julia Gulden Dagistanli, a Rutherford, NJ real estate agent since 2002. Learn about her North Jersey experience, listing expertise, design perspective and professional awards.",
       },
+      { property: "og:url", content: "https://juliadagistanli.com/about" },
       { property: "og:title", content: "About Julia Gulden Dagistanli" },
       {
         property: "og:description",
