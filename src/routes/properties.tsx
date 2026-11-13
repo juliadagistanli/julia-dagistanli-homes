@@ -5,13 +5,14 @@ import { currentListings, pastSales } from "@/lib/site";
 
 export const Route = createFileRoute("/properties")({
   head: () => ({
+    links: [{ rel: "canonical", href: "https://juliadagistanli.com/properties" }],
     meta: [
-      { title: "Properties · Current Listings & Recent Sales · Julia Dagistanli" },
+      { title: "North Jersey Real Estate Listings & Recent Sales | Julia Dagistanli" },
       {
         name: "description",
-        content:
-          "Current listings and a selection of recent sales by Julia Gulden Dagistanli across Rutherford, Bergen and Hudson Counties.",
+        content: "Explore current residential, multi-family, rental and commercial listings, plus selected recent sales represented by Julia Gulden Dagistanli across North Jersey.",
       },
+      { property: "og:url", content: "https://juliadagistanli.com/properties" },
       { property: "og:title", content: "Properties by Julia Dagistanli" },
       {
         property: "og:description",
