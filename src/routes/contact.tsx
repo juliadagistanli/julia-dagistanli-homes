@@ -5,13 +5,14 @@ import hero from "@/assets/hero-home.jpg";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
+    links: [{ rel: "canonical", href: "https://juliadagistanli.com/contact" }],
     meta: [
-      { title: "Contact Julia Dagistanli · Rutherford NJ Real Estate" },
+      { title: "Contact Julia Dagistanli | Rutherford NJ Real Estate Agent" },
       {
         name: "description",
-        content:
-          "Call, message or request a confidential home value and selling consultation with Julia Gulden Dagistanli.",
+        content: "Contact Julia Gulden Dagistanli at The Agency Rutherford for help selling, buying, renting or investing in North Jersey real estate. Request a confidential home valuation.",
       },
+      { property: "og:url", content: "https://juliadagistanli.com/contact" },
       { property: "og:title", content: "Contact Julia Dagistanli" },
       {
         property: "og:description",
