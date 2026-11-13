@@ -5,13 +5,14 @@ import kitchen from "@/assets/design-kitchen.jpg";
 
 export const Route = createFileRoute("/sell")({
   head: () => ({
+    links: [{ rel: "canonical", href: "https://juliadagistanli.com/sell" }],
     meta: [
-      { title: "Sell Your Home in Rutherford & Bergen County · Julia Dagistanli" },
+      { title: "Sell Your Home in Rutherford NJ & North Jersey | Julia Dagistanli" },
       {
         name: "description",
-        content:
-          "A personalized selling strategy: valuation, pricing, design-minded preparation, marketing, negotiation and closing across North Jersey.",
+        content: "Selling a home in Rutherford or North Jersey? Get a personalized valuation, strategic pricing, pre-sale improvement advice, thoughtful marketing and skilled negotiation.",
       },
+      { property: "og:url", content: "https://juliadagistanli.com/sell" },
       { property: "og:title", content: "Selling with Julia Dagistanli" },
       {
         property: "og:description",
