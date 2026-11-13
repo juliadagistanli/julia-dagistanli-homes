@@ -8,13 +8,14 @@ import kitchen from "@/assets/design-kitchen.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
+    links: [{ rel: "canonical", href: "https://juliadagistanli.com/" }],
     meta: [
-      { title: "Julia Dagistanli · Rutherford NJ Real Estate Agent" },
+      { title: "Rutherford NJ Real Estate Agent | Julia Gulden Dagistanli" },
       {
         name: "description",
-        content:
-          "Rutherford, NJ listing specialist with 20+ years helping sellers, buyers, landlords and investors across Bergen, Essex, Hudson and Passaic Counties.",
+        content: "Looking to sell a home in Rutherford, NJ or North Jersey? Julia Gulden Dagistanli offers strategic pricing, thoughtful preparation and expert real estate guidance across Bergen, Essex, Hudson and Passaic Counties.",
       },
+      { property: "og:url", content: "https://juliadagistanli.com/" },
       { property: "og:title", content: "Julia Dagistanli · Rutherford NJ Real Estate" },
       {
         property: "og:description",
